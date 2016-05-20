@@ -143,9 +143,7 @@ public class MainActivity extends Activity {
                         repMes = "error:"+ response.code();
                         myhandler.sendEmptyMessage(1);
                         count  = 15;
-
                     }
-
                 } catch (IOException e) {
                     // TODO Auto-generated catch block
                     Log.i("Test", "error:"+e.getMessage());
@@ -154,7 +152,6 @@ public class MainActivity extends Activity {
                     count  = 15;
                     e.printStackTrace();
                 }
-
 /*
 
                 Log.i("Test","Test");
@@ -197,17 +194,11 @@ public class MainActivity extends Activity {
                     });
 
                 }*/
-
-
-
             }
         }).start();
     }
     class MyHandler extends Handler
     {
-
-
-
         @Override
         public void handleMessage(final Message msg) {
             if(msg.what==0)
@@ -226,11 +217,7 @@ public class MainActivity extends Activity {
 
             super.handleMessage(msg);
         }
-
-
-
     }
-
     public Bitmap stringtoBitmap(String string){
 
         Bitmap bitmap=null;
@@ -246,6 +233,4 @@ public class MainActivity extends Activity {
 
         return bitmap;
     }
-
-
 }
